@@ -1,27 +1,29 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Link, Route, Routes } from 'react-router-dom';
-import NavbarComponent from './components/Navbar-component';
-import Register from './components/pages/Register';
+import Nav from './components/Nav';
+import { Route, Routes } from 'react-router-dom';
+import Main from './components/Main';
+import Experience from './components/Experience';
+import Time from './components/Time';
 
+class App extends React.Component {
 
-function App() {
-  return (
-    <div className="App">
-       <NavbarComponent></NavbarComponent>
+  render() {
+    return <div>
+      <header>
+        <Nav />
+      </header>
       <main>
         <Routes>
-          <Route path='/' element={<Main />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/register' element={<Register />} />
-          <Route path='/calendar' element={<Calendar />} />
-          <Route path='/garage' element={<Garage />} />
-          <Route path='/aboutus' element={<AboutUs />} />
+          <Route path='/' element={<Main />}/>
+          <Route path='/tapasztalat' element={<Experience />}/>
+          <Route path='/idopont' element={<Time />}/>
         </Routes>
       </main>
     </div>
-  );
+  }
+
 }
 
 export default App;

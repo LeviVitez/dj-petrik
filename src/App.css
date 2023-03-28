@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+#dj {
+  width: 800px;
+  height: 400px;
+}
+
+#mainDiv {
+  text-align: center;
+}
+
+#petrik {
+  float: right;
+  width: 300px;
+  height: 300px;
+}
