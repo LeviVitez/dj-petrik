@@ -1,17 +1,13 @@
 import { Component } from "react";
-
 interface State {
     name: string,
     date: string,
     description: string,
     output: string,
 }
-
 export default class Time extends Component<{}, State> {
-
     constructor(props: {}) {
         super(props);
-
         this.state = {
             name: '',
             date: '',
@@ -19,7 +15,6 @@ export default class Time extends Component<{}, State> {
             output: ''
         }
     }
-
     handleClick = async () => {
         const { name, date, description, output } = this.state;
         if (name.trim() == '' || date.trim() == '' || description.trim() == '') {
@@ -33,7 +28,6 @@ export default class Time extends Component<{}, State> {
             })
         }
     }
-
     render() {
         const { name, date, description, output } = this.state;
         return <div>
@@ -44,5 +38,4 @@ export default class Time extends Component<{}, State> {
             <p>{ output }</p>
         </div>
     }
-
 }

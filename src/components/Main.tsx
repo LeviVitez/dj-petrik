@@ -1,6 +1,5 @@
 import { Component } from "react";
 import dj from '../dj.jpg'
-
 export default class Main extends Component {
 
     render() {

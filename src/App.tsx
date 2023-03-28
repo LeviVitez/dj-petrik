@@ -23,7 +23,5 @@ class App extends React.Component {
       </main>
     </div>
   }
-
 }
-
 export default App;
